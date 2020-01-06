@@ -3,13 +3,13 @@
 echo 'create edgemesh init Container image'
 
 function usage() {
-	echo "execute 'sh createImg.sh [rpm | deb]' to create docker image"
+	echo "execute 'sh createImg.sh [rpm | deb | rpi]' to create docker image"
 	echo "execute 'sh createImg.sh help for use help'"
 }
 
 path="${1}"
 
-if [ "${path}" != "rpm" ] && [ "${path}" != "deb" ]; then
+if [ "${path}" != "rpm" ] && [ "${path}" != "deb" ] && [ "${path}" != "rpi" ]; then
 	usage
 	exit 0
 fi
