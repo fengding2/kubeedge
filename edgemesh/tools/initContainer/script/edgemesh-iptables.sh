@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -x
 
 function usage() {
 	echo 'this is the edgemesh-iptables usage'
